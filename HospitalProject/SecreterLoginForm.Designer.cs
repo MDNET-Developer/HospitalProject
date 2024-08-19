@@ -33,8 +33,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtFin = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -46,6 +46,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Daxil ol";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel1
             // 
@@ -87,19 +88,22 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Katib girişi";
             // 
-            // textBox1
+            // txtPass
             // 
-            this.textBox1.Location = new System.Drawing.Point(275, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(275, 130);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(162, 24);
+            this.txtPass.TabIndex = 8;
             // 
-            // textBox2
+            // txtFin
             // 
-            this.textBox2.Location = new System.Drawing.Point(275, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 22);
-            this.textBox2.TabIndex = 14;
+            this.txtFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFin.Location = new System.Drawing.Point(275, 81);
+            this.txtFin.Name = "txtFin";
+            this.txtFin.Size = new System.Drawing.Size(162, 24);
+            this.txtFin.TabIndex = 14;
             // 
             // SecreterLoginForm
             // 
@@ -107,15 +111,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(672, 230);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtFin);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPass);
             this.Name = "SecreterLoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SecreterLoginForm";
+            this.Load += new System.EventHandler(this.SecreterLoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,7 +134,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtFin;
     }
 }

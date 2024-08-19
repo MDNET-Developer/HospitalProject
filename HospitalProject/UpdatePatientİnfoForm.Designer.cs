@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.txtphone = new System.Windows.Forms.MaskedTextBox();
             this.comboGender = new System.Windows.Forms.ComboBox();
             this.txtmail = new System.Windows.Forms.TextBox();
             this.txtsurname = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
-            this.txtfincode = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,6 +42,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtFin = new System.Windows.Forms.TextBox();
+            this.txtMobile = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -56,14 +56,7 @@
             this.button1.TabIndex = 33;
             this.button1.Text = "Düzəliş et";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // txtphone
-            // 
-            this.txtphone.Location = new System.Drawing.Point(44, 361);
-            this.txtphone.Mask = "(999) 000-00-00";
-            this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(223, 22);
-            this.txtphone.TabIndex = 32;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboGender
             // 
@@ -103,14 +96,6 @@
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(223, 22);
             this.txtpassword.TabIndex = 27;
-            // 
-            // txtfincode
-            // 
-            this.txtfincode.Location = new System.Drawing.Point(44, 236);
-            this.txtfincode.Mask = "ooooooo";
-            this.txtfincode.Name = "txtfincode";
-            this.txtfincode.Size = new System.Drawing.Size(223, 22);
-            this.txtfincode.TabIndex = 26;
             // 
             // label8
             // 
@@ -192,19 +177,33 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Düzəliş et";
             // 
+            // txtFin
+            // 
+            this.txtFin.Location = new System.Drawing.Point(44, 238);
+            this.txtFin.Name = "txtFin";
+            this.txtFin.Size = new System.Drawing.Size(223, 22);
+            this.txtFin.TabIndex = 34;
+            // 
+            // txtMobile
+            // 
+            this.txtMobile.Location = new System.Drawing.Point(44, 363);
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(223, 22);
+            this.txtMobile.TabIndex = 35;
+            // 
             // UpdatePatientİnfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 596);
+            this.Controls.Add(this.txtMobile);
+            this.Controls.Add(this.txtFin);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtphone);
             this.Controls.Add(this.comboGender);
             this.Controls.Add(this.txtmail);
             this.Controls.Add(this.txtsurname);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txtpassword);
-            this.Controls.Add(this.txtfincode);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -224,13 +223,11 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.MaskedTextBox txtphone;
         private System.Windows.Forms.ComboBox comboGender;
         private System.Windows.Forms.TextBox txtmail;
         private System.Windows.Forms.TextBox txtsurname;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txtpassword;
-        private System.Windows.Forms.MaskedTextBox txtfincode;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -239,5 +236,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtFin;
+        private System.Windows.Forms.TextBox txtMobile;
     }
 }

@@ -22,7 +22,10 @@ namespace HospitalProject
 
         private void PatientLoginForm_Load(object sender, EventArgs e)
         {
+            txtFin.Text = "71SPY8D";
+            txtPass.Text = "Murad2001";
             txtPass.PasswordChar = '*';
+            
         }
       SqlConn bgl = new SqlConn();
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -45,6 +48,7 @@ namespace HospitalProject
             if(reader.Read())
             {
                 PatienrDeatilForm form = new PatienrDeatilForm();
+               
                 form.FinCode=txtFin.Text.ToString();
                 form.Show();
                 this.Hide();   

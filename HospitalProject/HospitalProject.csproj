@@ -194,6 +194,12 @@
     <Content Include="Photo\3034882.png" />
     <Content Include="Photo\MDHospital.png" />
     <Content Include="Photo\secreter.jpg" />
+    <None Include="Resources\Bell1.png" />
+    <None Include="Resources\Alarm3.png" />
+    <None Include="Resources\Bell.png" />
+    <None Include="Resources\Alarm2.png" />
+    <None Include="Resources\Alarm1.png" />
+    <None Include="Resources\Alarm.png" />
     <None Include="Resources\6401373.png" />
     <None Include="Resources\MDLogoHospital.PNG" />
     <None Include="Resources\Remove.png" />
